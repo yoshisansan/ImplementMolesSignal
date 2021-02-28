@@ -70,7 +70,6 @@ function sleep(ms) {
 }
 
 async function callMoleVoice(moleCharArr) {
-  console.log(moleCharArr);
   for (const mole of moleCharArr) {
     const oneCharMol = mole.signal;
     let count = 0;

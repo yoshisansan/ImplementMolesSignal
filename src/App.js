@@ -1,18 +1,18 @@
-import React, {Fragment} from 'react';
+import React, { StrictMode } from "react";
 import PUIcontainer from "./containers/PUIcontainer.jsx";
-import Layout from './components/Layout.jsx';
-import { createGlobalStyle } from 'styled-components';
-import DocumentMeta from 'react-document-meta';
-import reset from 'styled-reset';
+import Layout from "./components/Layout.jsx";
+import { createGlobalStyle } from "styled-components";
+import DocumentMeta from "react-document-meta";
+import reset from "styled-reset";
 
 const meta = {
-  title: 'PUIPUIモールス信号',
-  description: 'モールス信号をあのモルモットの鳴き声で再現しました。',
-  canonical: 'https://puipui-morse.vercel.app',
+  title: "PUIPUIモールス信号",
+  description: "モールス信号をあのモルモットの鳴き声で再現しました。",
+  canonical: "https://puipui-morse.vercel.app",
   meta: {
-    charset: 'utf-8',
+    charset: "utf-8",
     name: {
-      keywords: 'PUIPUIモルカー,モールス信号変換'
+      keywords: "PUIPUIモルカー,モールス信号変換"
     }
   }
 };
@@ -63,13 +63,13 @@ const GlobalStyle = createGlobalStyle`
 
 export default function App() {
   return (
-    <Fragment>
+    <StrictMode>
       <GlobalStyle />
-      <DocumentMeta>
-      <Layout>
-        <PUIcontainer />
-      </Layout>
+      <DocumentMeta {...meta}>
+        <Layout>
+          <PUIcontainer />
+        </Layout>
       </DocumentMeta>
-    </Fragment>
+    </StrictMode>
   );
 }

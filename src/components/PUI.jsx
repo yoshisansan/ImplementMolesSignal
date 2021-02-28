@@ -101,7 +101,7 @@ const PUI = ({ handleSubmit, handleInputChange, char, moleChar }) => {
           <TextAreaPUI
             name="PUIPUIモールス信号のテキストエリア"
             rows={6}
-            value={moleChars}
+            defaultValue={moleChars}
           />
         </div>
         <ButtonPUI type="submit">
