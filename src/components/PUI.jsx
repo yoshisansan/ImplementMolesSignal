@@ -92,7 +92,7 @@ const PUI = ({ handleSubmit, handleInputChange, char, moleChar }) => {
             onChange={(e) => handleInputChange(e)}
             type="textarea"
             placeholder="文章を入力する"
-            value={char}
+            defaultValue={char}
           />
           <p>※漢字、英文字（外国語）は変換できません</p>
         </div>
